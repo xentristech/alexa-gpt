@@ -113,6 +113,9 @@ requests>=2.20.0
 ### 10.
 Create an OpenAI API key on the [API keys page](https://platform.openai.com/api-keys) by clicking "+ Create new secret key".
 
+### OpenAI API key environment variable
+The Lambda function reads your key from an environment variable called `OPENAI_API_KEY`. In the Alexa Developer Console, open the **Code** tab and use the **Environment variables** option in the left panel to add this variable.
+
 ### 11.
 Replace your lambda_functions.py file with the [provided lambda_function.py](lambda/lambda_function.py).
 
@@ -254,7 +257,7 @@ lambda_handler = sb.lambda_handler()
 ```
 
 ### 12.
-In the Lambda console, set an environment variable called `OPENAI_API_KEY` with the key you generated from your [OpenAI account](https://platform.openai.com/api-keys).
+In the Alexa Developer Console, open the **Code** tab and add an environment variable named `OPENAI_API_KEY` with the key you generated from your [OpenAI account](https://platform.openai.com/api-keys).
 
 ### 13.
 Save and deploy. Go to "Test" section and enable "Skill testing" in "Development".
