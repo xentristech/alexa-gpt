@@ -1,0 +1,28 @@
+# Ignore Alexa skill configuration directory
+.ask/
+
+# Ignore Python cache files and directories
+__pycache__/
+*.py[cod]
+
+# Ignore environment directories
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore dependency archives and packages
+*.egg
+*.egg-info/
+.eggs/
+
+# Ignore logs and other temporary files
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+
+# Unit test / coverage reports
+.tox/
+.coverage
+
