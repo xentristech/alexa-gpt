@@ -270,3 +270,13 @@ You are now ready to use your Alexa in ChatGPT mode. You should see results like
 ![test](images/test.png)
 
 Please note that running this skill will incur costs for using both AWS Lambda and the OpenAI API. Make sure you understand the pricing structure and monitor your usage to avoid unexpected charges.
+
+## Running Tests
+
+To run the test suite, install dependencies and execute `pytest`:
+
+```bash
+pip install -r lambda/requirements.txt pytest
+pytest
+```
+
