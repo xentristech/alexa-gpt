@@ -7,9 +7,10 @@ import ask_sdk_core.utils as ask_utils
 import requests
 import logging
 import json
+import os
 
-# Set your OpenAI API key
-api_key = "YOUR_API_KEY"
+# Read your OpenAI API key from the environment
+api_key = os.environ.get("OPENAI_API_KEY")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

@@ -126,9 +126,10 @@ import ask_sdk_core.utils as ask_utils
 import requests
 import logging
 import json
+import os
 
-# Set your OpenAI API key
-api_key = "YOUR_API_KEY"
+# Read your OpenAI API key
+api_key = os.environ.get("OPENAI_API_KEY")
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -253,9 +254,7 @@ lambda_handler = sb.lambda_handler()
 ```
 
 ### 12.
-Put your OpenAI API key that you got from your [OpenAI account](https://platform.openai.com/api-keys)
-
-![openai_api_key](images/api_key.png)
+In the Lambda console, set an environment variable called `OPENAI_API_KEY` with the key you generated from your [OpenAI account](https://platform.openai.com/api-keys).
 
 ### 13.
 Save and deploy. Go to "Test" section and enable "Skill testing" in "Development".
